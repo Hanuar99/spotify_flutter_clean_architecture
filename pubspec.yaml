@@ -1,0 +1,68 @@
+name: spotify
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^16.1.0
+  flutter_svg: ^2.2.0
+  flutter_bloc: 
+  hydrated_bloc: 
+  path_provider: 
+  firebase_core: 
+  firebase_auth: 
+  get_it: 
+  dartz: 
+  cloud_firestore:
+  just_audio:
+  equatable: 
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  flutter_gen: ^5.12.0
+  bloc_test:
+  mocktail:
+  mockito: # opcional
+  firebase_auth_mocks:
+  fake_cloud_firestore: 
+  network_image_mock:
+  integration_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/vectors/
+
+  fonts:
+    - family: Satoshi
+      fonts:
+        - asset: assets/fonts/Satoshi-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Satoshi-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Satoshi-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Satoshi-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Satoshi-Light.ttf
+          weight: 300
+
+flutter_gen:
+  output: lib/generated/
+  integrations:
+    flutter_svg: true
+    lottie: true
