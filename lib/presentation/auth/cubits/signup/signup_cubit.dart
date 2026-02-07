@@ -1,7 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify/data/models/auth/create_user_req.dart';
 import 'package:spotify/domain/usecases/auth/signup_usecase.dart';
+
+import '../../../../domain/params/auth/signup_params.dart';
 
 part 'signup_state.dart';
 
@@ -18,7 +19,7 @@ class SignupCubit extends Cubit<SignupState> {
     emit(SignupLoading());
 
     final result = await signupUseCase.call(
-      CreateUserReq(
+      SignupParams.create(
         fullName: fullName,
         email: email,
         password: password,
